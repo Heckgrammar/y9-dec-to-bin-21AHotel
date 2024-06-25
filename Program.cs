@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,26 +24,10 @@ namespace Y9_DEC_TO_BIN_SKELETON
             //Insert a string at the start of another string
             string myCombinedString = myIntAsString + myString;
             Console.WriteLine(myCombinedString);
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             Console.Read();
 
-        }
-    }
-}
+
             //MAIN:  NUMBER CONVERSION PROGRAM
 
             //CODE GOES HERE
@@ -50,11 +35,11 @@ namespace Y9_DEC_TO_BIN_SKELETON
 
         //static void means the function will not return a value so it does not need a data type 
         //...this function DOES return a value so the method must have a data type
-//        static string numberConversion(int number, int numberbase)
-//        {
-//            //CODE GOES HERE
-
-//            return result; //REMOVE THE RED LINE!
-//        }
-//    }
-//}
+        static string numberConversion(int number, int numberbase)
+        {
+            //CODE GOES HERE
+            string result = Convert.ToString(number + numberbase);
+            return result; //REMOVE THE RED LINE!
+        }
+   }
+}
